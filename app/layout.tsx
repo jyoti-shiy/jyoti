@@ -6,6 +6,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Resume from "@/components/Resume";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -68,6 +69,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Resume/>
           <Navbar menubar={menubar} widthsubstract={widthsubstract} />
           <div style={mrtyle} id="mainRoot" className="bg-zinc-950 text-white ">
             {children}

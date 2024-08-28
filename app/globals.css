@@ -274,9 +274,32 @@
     top: 0;
   }
 }
+.circle {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  display: block;
+  z-index: 999;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  background: radial-gradient(circle at 100px 100px, #6c6c6c, #000);
+  animation: rotateInPlace 3s infinite linear;
+}
+
+@keyframes rotateInPlace {
+  
+  100% {
+   
+    transform: rotate(360deg);
+  }
+}
+
+
 
 @keyframes mobileNavExpand {
-
+  
   
   100% {
     left: -5000px;

@@ -321,6 +321,8 @@ export default function Navbar({ widthsubstract ,menubar}: NavbarProps) {
                 </Link>
               </li>
             ))}
+
+            
           </ul>
         </div>
        
