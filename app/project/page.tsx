@@ -66,7 +66,7 @@ const Page = () => {
         <div className="w-full bg-[#232121] rounded-[15px] p-5 sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
           <ul className="w-full sm:w-[50%]">
             <li className="mb-9">
-              <h2 className="text-[18px] sm:text-[20px] mb-3">What Is Astrology App?</h2>
+              <h2 className="text-[18px] sm:text-[20px] mb-3">What Is AstroKnock App?</h2>
               <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
                 A mobile application designed to offer users a comprehensive astrological experience, including daily horoscopes, personalized readings, compatibility reports, and detailed natal charts. The project aimed to create an engaging, user-friendly interface that caters to astrology enthusiasts, providing them with insightful and interactive content based on their unique astrological profiles.
               </p>
