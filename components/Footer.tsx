@@ -35,7 +35,7 @@ export default function Footer({ menuWidth }: NavbarProps) {
           </li>
           <li className="hover:text-white  transition-all duration-150 w-auto ">
             {" "}
-            <Link href={"#"}>About</Link>{" "}
+            <Link href={"/about"}>About</Link>{" "}
           </li>
         </ul>
 
