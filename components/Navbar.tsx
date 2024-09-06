@@ -68,19 +68,19 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
   const contact: IFirstMenu[] = [
     {
       imageIcon: "/image/icon/email.svg",
-      imageIcon2: "/image/icon/iconWhite/MailWhite.svg",
+      imageIcon2: "/image/icon/iconWhite/email.svg",
       nameOfItem: "Email",
       id: "6",
     },
     {
       imageIcon: "/image/icon/linkdin.svg",
-      imageIcon2: "/image/icon/iconWhite/LinkedinWhite.svg",
+      imageIcon2: "/image/icon/iconWhite/linkdin.svg",
       nameOfItem: "Linkdin",
       id: "7",
     },
     {
       imageIcon: "/image/icon/behance.svg",
-      imageIcon2: "/image/icon/iconWhite/BehanceWhite.svg",
+      imageIcon2: "/image/icon/iconWhite/behance.svg",
       nameOfItem: "Behance",
       id: "8",
     },

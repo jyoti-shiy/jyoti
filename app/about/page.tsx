@@ -57,7 +57,7 @@ const Page = () => {
 
         <ul className="">
           <li className="list-disc text-[#858585] ml-11 mt-3 ">
-            state of west bengal, india
+            state of west bengal, India
           </li>
         </ul>
       </div>
