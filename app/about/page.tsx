@@ -27,13 +27,13 @@ const Page = () => {
         <h1 className="text-xl">Experience : </h1>
 
         <ul className="mb-7">
-          <li className="list-disc ml-11 mt-3 font-thin">
+          <li className="list-disc text-[#858585] ml-11 mt-3 ">
             Junior UI/UX Designer at Betazen Infotech, Kolkata.
           </li>
-          <li className="list-disc ml-11 font-thin">
+          <li className="list-disc text-[#858585] ml-11 ">
             8 months of hands-on experience in UI/UX design.
           </li>
-          <li className="list-disc ml-11 font-thin">
+          <li className="list-disc text-[#858585] ml-11 ">
             Worked on diverse projects, focusing on both user interface and user
             experience.
           </li>
@@ -42,13 +42,13 @@ const Page = () => {
         <h1 className="text-xl">Strengths : </h1>
 
         <ul className="mb-7">
-          <li className="list-disc ml-11 mt-3 font-thin">
+          <li className="list-disc text-[#858585] ml-11 mt-3 ">
           Creating visually appealing and user-centric designs.
           </li>
-          <li className="list-disc ml-11 font-thin">
+          <li className="list-disc text-[#858585] ml-11 ">
           Collaborating with cross-functional teams.
           </li>
-          <li className="list-disc ml-11 font-thin">
+          <li className="list-disc text-[#858585] ml-11 ">
           Translating complex requirements into effective designs.
           </li>
         </ul>
@@ -56,7 +56,7 @@ const Page = () => {
         <h1 className="text-xl">Location : </h1>
 
         <ul className="">
-          <li className="list-disc ml-11 mt-3 font-thin">
+          <li className="list-disc text-[#858585] ml-11 mt-3 ">
             state of west bengal, india
           </li>
         </ul>

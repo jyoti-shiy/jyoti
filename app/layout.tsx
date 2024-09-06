@@ -49,6 +49,37 @@ export default function RootLayout({
     return () => window.removeEventListener("resize", handleResize);
   }, [windowsWidth]);
 
+
+
+
+
+  useEffect(() => {
+    // Update the page title
+    document.title = "Jyoti Shikary UI/UX Designer";
+
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute("content", " Jyoti Shikary, a passionate and dedicated UI/UX Designer My journey into UI/UX began out of a love for creativity and problem-solving, which I discovered during my time at Betazen  ");
+    } else {
+      // Create meta tag if not found
+      const meta = document.createElement('meta');
+      meta.name = "Jyoti Shikary";
+      meta.content = "Jyoti Shikary, a passionate and dedicated UI/UX Designer";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
   const [menubar,setMenubar]=useState<boolean>(true)
 
   useEffect(() => {
