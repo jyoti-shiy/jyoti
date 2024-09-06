@@ -155,98 +155,40 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
                 </button>
               </li>
             )}
-           {contact.map((menuItem: IFirstMenu) => (
-  <li
-    key={menuItem.id}
-    className={`flex justify-center relative  ${
-      menuName === menuItem.nameOfItem
-        ? "border border-zinc-500 rounded bg-zinc-800"
-        : "border-0"
-    }  `}
-    onMouseEnter={() => setMenuId(menuItem.id)}
-    onMouseLeave={() => setMenuId("")}
-    onClick={() => {menuItem.id==='6' &&( window.location.href = "mailto:jyotishikary400@gmail.com?subject=Subject%20Here&body=Body%20Here");
-      menuItem.id==='7' &&( window.location.href = "https://www.linkedin.com/in/jyotishikary/");
-      menuItem.id==='8' &&( window.location.href = "https://www.behance.net/jyotishikary400_s")
-
-
-
-    }
-  
-  
-  }
-  >
-    <Link
-      href={"/"}
-      style={{
-        width: menuWidth ? "255px" : "60px",
-      }}
-      className={`flex rounded px-4 py-2  justify-between items-center  ${
-        menuWidth ? "bounce-widthFm" : "width-expandFm"
-      }`}
-    >
-      <div className={`flex items-center gap-3 ${menuWidth?'m-0':'m-auto'} p-0`}>
-        <Image
-          src={
-            menuId === menuItem.id ||
-            menuName === menuItem.nameOfItem
-              ? menuItem.imageIcon
-              : menuItem.imageIcon2
-          }
-          alt="ProfileImage"
-          quality={100}
-          width={25}
-          height={25}
-          className="rounded-pill w-[20px]"
-        />
-        {menuWidth ? (
-          <p
-            className={`m-0 p-0  text-[14px] ${
-              menuId === menuItem.id ||
-              menuName === menuItem.nameOfItem
-                ? "text-white"
-                : "menuColor"
-            }`}
-          >
-            {menuItem.nameOfItem}
-          </p>
-        ):(
-          <>{(menuId===menuItem.id && menuName !== menuItem.nameOfItem) && <p
-            className={`m-0 p-0 border bg-zinc-800 textAnimation overflow-hidden border-zinc-700 px-4  absolute top-1 rounded-full start-[50px] ${
-              menuId === menuItem.id ||
-              menuName === menuItem.nameOfItem
-                ? "text-white"
-                : "menuColor"
-            }`}
-          >
-            {menuItem.nameOfItem}
-          </p>}</>
-        )}
-      </div>
-      {menuWidth && (
-        <div className="border border-zinc-500 rounded px-1 text-sm ">
-          <p
-            className={`m-0 p-0 ${
-              menuId === menuItem.id ||
-              menuName === menuItem.nameOfItem
-                ? "text-white"
-                : "menuColor"
-            }`}
-          >
-            {menuItem.id}
-          </p>
-        </div>
-      )}
-    </Link>
-  </li>
-))}
+            {contact.map((contactItem: IFirstMenu) => (
+              <li
+                key={contactItem.id}
+                className={`flex justify-center relative  text-[14px] ${currentPath === `/${contactItem.path}` ? "border border-zinc-700 rounded bg-zinc-800 text-white " : "border-0 menuColor"}`}
+                onMouseEnter={() => setMenuId(contactItem.id)}
+                onMouseLeave={() => setMenuId("")}
+                onClick={handleItemClick} // Collapse only on mobile
+              >
+                <Link
+                  href={`/${contactItem.path}`}
+                  style={{ width: menuWidth ? "255px" : "60px" }}
+                  className={`flex rounded px-4 py-2  justify-between items-center  ${menuWidth ? "bounce-widthFm" : "width-expandFm"}`}
+                >
+                  <div className={`flex items-center justify-between ${menuWidth ? 'm-0' : 'm-auto'} gap-3`}>
+                    <Image
+                      src={currentPath === `/${contactItem.path}` ? contactItem.imageIcon : contactItem.imageIcon2}
+                      alt="ProfileImage"
+                      width={17}
+                      quality={100}
+                      height={17}
+                      className={`rounded-pill`}
+                    />
+                    {menuWidth ? (
+                      <p className={`m-0 p-0 `}>{contactItem.nameOfItem}</p>
+                    ) : (
+                      <>{menuId === contactItem.id && menuName !== contactItem.nameOfItem && <p className={`m-0 p-0 border bg-zinc-800 textAnimation overflow-hidden border-zinc-700 px-4 absolute top-1 rounded-full start-[50px] ${menuId === contactItem.id || currentPath === `/${contactItem.path}` ? "text-white" : "menuColor"}`}>{contactItem.nameOfItem}</p>}</>
+                    )}
+                  </div>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </div>
   );
 }
-
-
-
-

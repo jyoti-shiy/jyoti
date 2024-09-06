@@ -165,8 +165,8 @@
 }
 
 .activeWorking {
-  width: 10px;
-  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
   border-radius: 50%;
   background: rgb(21, 255, 91);
   animation: pulse 1.5s infinite;
