@@ -2,11 +2,14 @@
 import Link from "next/link";
 import React from "react";
 import Clock from "./Clock";
+import { usePathname } from 'next/navigation';
+
 interface NavbarProps {
   menuWidth: boolean;
 }
 
 export default function Footer({ menuWidth }: NavbarProps) {
+  const currentPath = usePathname();
   return (
     <div
       className={`bg-zinc-900 ${
