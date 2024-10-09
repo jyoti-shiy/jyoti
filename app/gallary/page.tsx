@@ -153,7 +153,7 @@ const Page = () => {
           <div
             style={{ cursor: "pointer" }}
             className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
-            onClick={() => router.push('/gallary/poster')}
+           
           >
             <div className="h-[210px] overflow-hidden homepageCardGradient flex justify-center items-center">
               <Image
