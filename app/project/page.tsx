@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div className="my-24 flex flex-col gap-7 blurAnimation">
       <div className="w-full bg-[#232121] rounded-[15px] justify-between p-5 items-center sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
-        <div className="text w-[40%] flex flex-col gap-3 ">
+        <div className="text w-full lg:w-[40%] flex flex-col gap-3 ">
           <h2 className="text-3xl font-semibold">Personal Portfolio</h2>
           <p className="text-[12px]">
             Welcome to my portfolio, where I highlight my UI/UX design expertise
@@ -40,7 +40,7 @@ const Page = () => {
 
 
       <div className="w-full bg-[#232121] rounded-[15px] justify-between p-5 items-center sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
-        <div className="text w-[40%] flex flex-col gap-3">
+        <div className="text w-full lg:w-[40%] flex flex-col gap-3">
           <h2 className="text-3xl font-semibold">Astroknock App</h2>
           <p className="text-[12px]">
           A mobile application designed to offer users a comprehensive astrological experience, including daily horoscopes, personalized readings, compatibility reports, and detailed natal charts. 
