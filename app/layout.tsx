@@ -31,7 +31,7 @@ export default function RootLayout({
     marginLeft: menuWidth ? "255px" : "60px",
     padding: menuWidth ? "0 200px" : "0 280px",
     backgroundImage:
-      "linear-gradient( to right, transparent, transparent 20%, rgba(45,45,45,0.3) 100%)",
+      "linear-gradient( to right, transparent, transparent 20%, rgba(45,45,45,0) 100%)",
     transition: "margin-left 0.3s ease",
   };
 
