@@ -28,11 +28,9 @@ const Page = () => {
 
         <ul className="mb-7">
           <li className="list-disc text-[#858585] ml-11 mt-3 ">
-            Junior UI/UX Designer at Betazen Infotech, Kolkata.
+            1 Year , Intern UI/UX Designer at Betazen Infotech, Kolkata.
           </li>
-          <li className="list-disc text-[#858585] ml-11 ">
-            8 months of hands-on experience in UI/UX design.
-          </li>
+         
           <li className="list-disc text-[#858585] ml-11 ">
             Worked on diverse projects, focusing on both user interface and user
             experience.
