@@ -149,6 +149,31 @@ const Page = () => {
               </div>
             </div>
           </div>
+
+          <div
+            style={{ cursor: "pointer" }}
+            className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg border-zinc-700 border cardAnimation"
+            onClick={() => router.push('/gallary/poster')}
+          >
+            <div className="h-[210px] overflow-hidden homepageCardGradient flex justify-center items-center">
+              <Image
+                src="/image/project/medicineDelivery 1.png"
+                width={500}
+                height={500}
+                quality={100}
+                alt="Hero"
+                className="transition-transform duration-300 transform group-hover:scale-110 p-5"
+              />
+            </div>
+            <div className="p-5 flex justify-between items-end">
+              <div>
+                <h1 className="text-slate-50 text-xl">Medicine Delivery site</h1>
+                <p className="text-zinc-600 text-md text-[13px] leading-snug">
+                Welcome to Medico, your trusted online medicine delivery service designed for convenience and reliability. Medico streamlines the process of ordering medications from the comfort of your home.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
