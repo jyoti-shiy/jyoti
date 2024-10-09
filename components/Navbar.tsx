@@ -18,6 +18,9 @@ interface NavbarProps {
 
 export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
   const currentPath = usePathname();
+  
+  
+  
   const [hoveredPath, setHoveredPath] = useState<string | null>(null);
 
   const [menuWidth, setMenuWidth] = useState<boolean>(true);
@@ -183,7 +186,7 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
               <li
                 key={menuItem.id}
                 className={`flex justify-center relative text-[14px] ${
-                  currentPath === `/${menuItem.path}` ||
+                  currentPath.split("/")[1] === `${menuItem.path}` ||
                   hoveredPath === menuItem.path
                     ? "border border-zinc-700 rounded bg-zinc-800 text-white"
                     : "border-0 menuColor"

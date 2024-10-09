@@ -1,4 +1,6 @@
 "use client";
+import Project1 from "@/components/Project1";
+import ProjectContent from "@/components/ProjectContent";
 import Image from "next/image";
 import React from "react";
 
@@ -8,32 +10,56 @@ const page = () => {
     review: string;
     description: string;
   }
+  interface ProjectContent {
+    title: string;
+    content: string[];
+}
+
+const projectContent: ProjectContent[] = [
+  {
+      title: "Solution",
+      content: [
+          "Designed an easy-to-navigate and unique portfolio with minimal color contrast but still visually attractive.",
+          "Used dark mode, which is popular and appealing in the current market.",
+          "Created an animated and visually appealing navigation bar.",
+          "Added icons for Behance, LinkedIn, and email, which redirect users to the respective profiles.",
+          "Included a rotating download button at the bottom right corner for both mobile and desktop views."
+      ]
+  },
+  {
+      title: "Process",
+      content: [
+          "Research: I analyzed over 100 portfolios and gathered insights from multiple platforms to understand best practices and common pitfalls.",
+          "Wireframes & Prototyping: I sketched my initial ideas on paper, then translated them into wireframes in Figma, followed by prototyping to bring the concept to life."
+      ]
+  },
+  {
+      title: "Challenges",
+      content: [
+          "I encountered issues with making the navigation bar fully responsive on mobile, as it didn't fit properly at first."
+      ]
+  }
+];
 
   const project: IReview[] = [
     {
       image: "/image/project/Group 1261152941.png",
-      review: "95%+",
-      description:
-        "of astrology apps focus on specific principles, requiring users to switch between platforms. forcing users to juggle multiple platforms for a comprehensive experience.",
-    },
-    {
-      image: "/image/project/Group 1261152942.png",
-      review: "10/12",
-      description:
-        "apps focus solely on daily horoscopes and don’t offer astrology-based partner matching, leaving a gap for users interested in both.",
-    },
-    {
-      image: "/image/project/Group 1261152944.png",
       review: "80%+",
       description:
-        "of astrology apps do not offer direct audio chat features, less interactions between users & astrologer. This lack of accessibility can make it difficult for users to receive immediate and tailored astrological advice.",
+        " portfolios are overly complicated and difficult to navigate.",
     },
     {
-      image: "/image/project/Group 1261152945.png",
-      review: "50%+",
+      image: "/image/project/Group 1261152941 (3).png",
+      review: "82%+",
       description:
-        "50% of users want to learn astrology but struggle due to a lack of in-depth educational resources in most astrology apps.",
+        "High color contrast makes some portfolios visually overwhelming.",
     },
+    {
+      image: "/image/project/Group 1261152941 (2).png",
+      review: "80%+",
+      description:
+        "A lack of uniqueness, with many portfolios looking similar to each other.",
+    }
   ];
 
   return (
@@ -45,25 +71,28 @@ const page = () => {
 
         <div className="flex flex-col sm:flex-row mt-11 gap-5 justify-between">
           <ul className="list-disc w-full sm:w-[506px]">
-            <h1 className="text-2xl sm:text-[30px] mb-3">Astro Knock</h1>
+            <h1 className="text-2xl sm:text-[30px] mb-3">Personal Portfolio</h1>
             <li className="relative pl-5 mb-3">
-              A mobile application designed to provide personalized astrological insights based on user data.
+            Showcasing my UI/UX design skills with a clean, user-friendly interface.
             </li>
             <li className="relative pl-5 mb-3 text-[#E5E3E3]">
-              A mobile application designed to offer users a comprehensive astrological experience, including daily horoscopes, personalized readings, compatibility reports, and detailed natal charts.
+            Focused on simplicity, dark mode, and responsive design.
             </li>
             <li className="relative pl-5 text-[#B0B0B0]">
-              Creating profile and match with others according to astrological aspects.
+            Creating profile and match with others according to astrological aspects.
+            </li>
+            <li className="relative pl-5 text-[#B0B0B0]">
+            Easy access to connect via Behance, LinkedIn, or email.
             </li>
           </ul>
 
           <div className="flex justify-center items-center ">
-            <Image src={"/image/project/1.png"} quality={100} alt="Hero" width={400} height={400} className="w-full mt-0 lg:-mt-20 max-w-sm" />
+            <Image src={"/image/project/Group 1261152994 (1).png"} quality={100} alt="Hero" width={400} height={400} className="w-full mt-0 lg:-mt-20 max-w-sm" />
           </div>
         </div>
 
         <h1 className="text-2xl sm:text-[30px] mb-2 font-bold text-gray-200">Overview</h1>
-        <div className="w-full bg-[#232121] rounded-[15px] p-5 sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
+        {/* <div className="w-full bg-[#232121] rounded-[15px] p-5 sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
           <ul className="w-full sm:w-[50%]">
             <li className="mb-9">
               <h2 className="text-[18px] sm:text-[20px] mb-3">What Is Astrology App?</h2>
@@ -99,15 +128,16 @@ const page = () => {
               </p>
             </li>
           </ul>
-        </div>
+        </div> */}
+       
 
         <div className="flex flex-col sm:flex-row gap-7 my-12">
           {project.map((p, i) => (
             <div
               key={i}
-              className="w-full sm:w-[185px] flex flex-col items-center justify-start text-center space-y-2"
+              className="w-full flex-1 sm:w-[185px] flex flex-col items-center justify-start text-center space-y-2"
             >
-              <div className="w-[150px] h-[120px] flex items-center justify-center">
+              <div className="  flex items-center justify-center">
                 <Image
                   src={p.image}
                   alt=""
@@ -122,96 +152,17 @@ const page = () => {
           ))}
         </div>
 
-        <div className="relative mt-[260px]  bg-[#232121] rounded-[15px] pt-32 px-3 sm:px-11 pb-11">
-          <div className="absolute -lg:top-48 -top-36 left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] rounded-full bg-[#282829] projectAbsoluteShadow border border-zinc-300 flex justify-center items-center">
-          <div className="w-[70px] lg:w-[122px]">
 
-            <Image
-              src="/image/project/image_30.png"
-              alt=""
-              width={300}
-              height={200}
-              quality={100}
-              />
-              </div>
+          <div className="flex flex-col gap-9">
+        <ProjectContent projectContent={projectContent} />
+            
+         
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-9 items-center">
-            <div className="w-full sm:w-[65%]">
-              <h1 className="text-xl sm:text-2xl mb-3">
-                Unified Astrology: All Seven Principles in One Platform
-              </h1>
-              <p className="text-sm font-light text-[#B7B7B7]">
-                Most astrology apps limit users to specific principles, requiring them to switch between multiple platforms for a complete experience. This platform eliminates this hassle by combining all seven astrological principles into one unified platform, delivering a comprehensive astrology experience effortlessly.
-              </p>
-            </div>
-            <div className="flex items-center justify-center">
-              <Image
-                src="/image/project/first_pic.png"
-                alt=""
-                width={200}
-                height={200}
-              />
-            </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-9 items-center mt-10">
-            <div className="flex items-center justify-center">
-              <Image
-                src="/image/project/second_block.png"
-                alt=""
-                width={600}
-                height={200}
-              />
-            </div>
-            <div className="w-full sm:w-[65%]">
-              <h1 className="text-xl sm:text-2xl mb-3">
-                All-in-One Astrology and Compatibility Companion
-              </h1>
-              <p className="text-sm font-light text-[#B7B7B7]">
-                Unlike most astrology apps, this platform combines daily horoscopes with astrology-based partner matching. Users can search for potential partners, check match percentages, and assess compatibility with their current partner, all within a distinct and personalized UI.
-              </p>
-            </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-9 items-center mt-10">
-            <div className="w-full sm:w-[65%]">
-              <h1 className="text-xl sm:text-2xl mb-3">
-                Revolutionizing Astrology
-              </h1>
-              <p className="text-sm font-light text-[#B7B7B7]">
-                This platform stands out by offering real-time audio chat with astrologers, bridging the gap between daily horoscopes and personalized advice. Unlike many apps with limited interaction, this platform provides immediate, tailored guidance and a comprehensive astrological experience.
-              </p>
-            </div>
-            <div className="flex items-center justify-center">
-              <Image
-                src="/image/project/three_block.png"
-                alt=""
-                width={200}
-                height={200}
-              />
-            </div>
-          </div>
 
-          <div className="flex flex-col sm:flex-row gap-9 items-center mt-10">
-            <div className="flex items-center justify-center">
-              <Image
-                src="/image/project/image_28.png"
-                alt=""
-                width={200}
-                height={200}
-              />
-            </div>
-            <div className="w-full sm:w-[65%]">
-              <h1 className="text-xl sm:text-2xl mb-3">
-                Revolutionizing Astrology
-              </h1>
-              <p className="text-sm font-light text-[#B7B7B7]">
-                This platform stands out by offering real-time audio chat with astrologers, bridging the gap between daily horoscopes and personalized advice. Unlike many apps with limited interaction, this platform provides immediate, tailored guidance and a comprehensive astrological experience.
-              </p>
-            </div>
-          </div>
-        </div>
+       <Project1/>
       </div>
     </div>
   );
