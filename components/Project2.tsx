@@ -82,10 +82,9 @@ const Project2 = () => {
           <Image src="/image/project/image_28.png" alt="Astrology Chart Screenshot" width={200} height={200} />
         </div>
         <div className="w-full sm:w-[65%] fade-in from-right">
-          <h1 className="text-xl sm:text-2xl mb-3">Revolutionizing Astrology</h1>
+          <h1 className="text-xl sm:text-2xl mb-3">Master Astrology with an In-Depth Audio Library</h1>
           <p className="text-sm font-light text-[#B7B7B7]">
-            This platform stands out by offering real-time audio chat with astrologers, bridging the gap between daily horoscopes and personalized advice. Unlike many apps with limited interaction, this platform provides immediate, tailored guidance and a comprehensive astrological experience.
-          </p>
+Many users struggle to learn astrology due to a lack of resources. My app solves this with an audio library, offering in-depth lessons that make mastering astrology easy and engaging.          </p>
         </div>
       </div>
     </div>
