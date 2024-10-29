@@ -415,8 +415,7 @@ const page = () => {
                   <li>
                   A majority want real-time application tracking, indicating the importance of transparency in the hiring process.                  </li>
                   <li>
-                  Personalized job recommendations can significantly enhance their experience.
-                  </li>
+                  High demand for skill-specific filters and personalized job recommendations suggests these are essential features.                  </li>
                 </ul>
               </div>
 
@@ -424,14 +423,11 @@ const page = () => {
                 <h3 className="font-semibold mb-2">Recruiters :</h3>
                 <ul className="list-disc list-inside space-y-2 font-thin text-sm">
                   <li>
-                  Recruiters require detailed filtering options to assess candidates' technical skills effectively.
-                  </li>
+                  Difficulty in filtering candidates by technical skills emphasizes the need for advanced filtering tools.                  </li>
                   <li>
-                  An efficient job posting process and streamlined application management are essential.
-                  </li>
+                  A simplified job posting process is valued, pointing to the need for efficiency in recruiter workflows.                  </li>
                   <li>
-                  Direct, accessible communication tools with applicants can improve hiring timelines.
-                  </li>
+                  Recruiters highly prioritize in-platform communication, showing that direct candidate engagement is key to a smoother hiring process.                  </li>
                 </ul>
               </div>
             </div>
