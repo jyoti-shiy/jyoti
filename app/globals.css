@@ -64,7 +64,14 @@
 
 
 }
-.list-disc li::before{
+.cuateBG{
+  background-image: url('/image/project/cuate.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+}
+.list-dis li::before{
   width: 7px;
   height: 7px;
   background: #fff;
