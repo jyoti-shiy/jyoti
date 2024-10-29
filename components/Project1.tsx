@@ -1,40 +1,9 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
 import Image from 'next/image';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const Project1 = () => {
-  useEffect(() => {
-    // Ensure the animation runs after the page and images have fully loaded
-    const elements = document.querySelectorAll('.fade-in');
-
-    // Check if elements exist and animate each based on the direction of fade-in
-    if (elements.length > 0) {
-      elements.forEach((el) => {
-        gsap.fromTo(
-          el,
-          { opacity: 0, x: el.classList.contains('from-left') ? -100 : 100 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 80%', // Start animation when top of element is 80% down the viewport
-              end: 'top 40%',   // End animation when top of element is 40% down the viewport
-              toggleActions: 'play none none reverse',
-            },
-          }
-        );
-      });
-    }
-
-    // Cleanup ScrollTriggers on component unmount
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+ 
 
   return (
     <div className="relative mt-[260px] bg-[#232121] rounded-[15px] pt-32 px-3 sm:px-11 pb-11">
