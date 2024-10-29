@@ -45,7 +45,7 @@ const page = () => {
         </h1>
 
         <div className="flex flex-col sm:flex-row mt-11 gap-5 justify-between">
-          <ul className="list-disc w-full sm:w-[506px]">
+          <ul className="list-dis w-full sm:w-[506px]">
             <h1 className="text-2xl sm:text-[30px] mb-3">Astro Knock</h1>
             <li className="relative pl-5 mb-3">
               A mobile application designed to provide personalized astrological insights based on user data.
