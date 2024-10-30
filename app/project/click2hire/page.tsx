@@ -1,7 +1,14 @@
 "use client";
+import Ideate from "@/components/Ideate";
+import LastSection from "@/components/LastSection";
+import Manash from "@/components/Manash";
+import ManashEmptyMap from "@/components/ManashEmptyMap";
+import Phase from "@/components/Phase";
 import Project1 from "@/components/Project1";
 import ProjectContent from "@/components/ProjectContent";
 import QuantitativeResearch from "@/components/QuantitativeResearch";
+import Syantan from "@/components/Syantan";
+import SyanTanEmptyComponent from "@/components/SyanTanEmptyComponent";
 import Image from "next/image";
 import React from "react";
 
@@ -295,144 +302,156 @@ const page = () => {
             <h1 className="text-3xl font-semibold mb-4 text-center ">
               1. DISCOVER PHASE
             </h1>
-          <div className="cuateBG rounded-2xl ">
+            <div className="cuateBG rounded-2xl ">
+              <div className="text-lg backdrop-blur-5xl shadow shadow-zinc-700     mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl ">
+                <div className="flex items-center gap-2">
+                  <h2 className="mb-2 ">
+                    {" "}
+                    <i> Qualitative Research :</i>{" "}
+                  </h2>
+                  <span className=" h-[1px] w-2/3 bg-white"> </span>
+                </div>
+                <p className="mb-4 font-thin text-md">
+                  To understand the needs of IT job seekers and recruiters, I
+                  conducted user interviews and analyzed feedback from tech
+                  industry professionals:
+                </p>
 
-         
-            <div className="text-lg backdrop-blur-5xl border     mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl ">
-              <div className="flex items-center gap-2">
-                <h2 className="mb-2 ">
-                  {" "}
-                  <i> Qualitative Research :</i>{" "}
-                </h2>
-                <span className=" h-[1px] w-2/3 bg-white"> </span>
+                <div>
+                  <h3 className="font-semibold mb-2">Job Seekers:</h3>
+                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                    <li>
+                      How can they find relevant IT roles more easily on a
+                      dedicated platform?
+                    </li>
+                    <li>
+                      Can job descriptions be clearer and include skill-specific
+                      filters?
+                    </li>
+                    <li>
+                      How can the application process be streamlined to provide
+                      status updates?
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-6">
+                  <h3 className="font-semibold mb-2">Recruiters:</h3>
+                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                    <li>
+                      How can they quickly filter candidates based on technical
+                      skills and experience?
+                    </li>
+                    <li>
+                      Can the job posting and application review process be more
+                      efficient?
+                    </li>
+                    <li>
+                      How can candidate communication be simplified for better
+                      accessibility?
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <p className="mb-4 font-thin text-md">
-                To understand the needs of IT job seekers and recruiters, I
-                conducted user interviews and analyzed feedback from tech
-                industry professionals:
-              </p>
 
-              <div>
-                <h3 className="font-semibold mb-2">Job Seekers:</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-                    How can they find relevant IT roles more easily on a
-                    dedicated platform?
-                  </li>
-                  <li>
-                    Can job descriptions be clearer and include skill-specific
-                    filters?
-                  </li>
-                  <li>
-                    How can the application process be streamlined to provide
-                    status updates?
-                  </li>
-                </ul>
-              </div>
-
-              <div className="mt-6">
-                <h3 className="font-semibold mb-2">Recruiters:</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-                    How can they quickly filter candidates based on technical
-                    skills and experience?
-                  </li>
-                  <li>
-                    Can the job posting and application review process be more
-                    efficient?
-                  </li>
-                  <li>
-                    How can candidate communication be simplified for better
-                    accessibility?
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow">
-             
+              <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow shadow-zinc-700">
                 <h2 className="mb-2 ">
                   {" "}
                   <i>Key Insights Derived from Interviews :</i>{" "}
                 </h2>
-               
-             
-             
-              <div>
-                <h3 className="font-semibold mb-2">For Job Seekers :</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-                  There is a strong need for advanced filters to help quickly identify relevant IT roles.
-                  </li>
-                  <li>
-                  Users value a clear, streamlined application tracking system to stay updated on application progress.                  </li>
-                  <li>
-                  Personalized job recommendations can significantly enhance their experience.
-                  </li>
-                </ul>
-              </div>
 
-              <div className="mt-6">
-                <h3 className="font-semibold mb-2">Recruiters :</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                <div>
+                  <h3 className="font-semibold mb-2">For Job Seekers :</h3>
+                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                    <li>
+                      There is a strong need for advanced filters to help
+                      quickly identify relevant IT roles.
+                    </li>
+                    <li>
+                      Users value a clear, streamlined application tracking
+                      system to stay updated on application progress.{" "}
+                    </li>
+                    <li>
+                      Personalized job recommendations can significantly enhance
+                      their experience.
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mt-6">
+                  <h3 className="font-semibold mb-2">Recruiters :</h3>
+                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
                   <li>
-                  Recruiters require detailed filtering options to assess candidates' technical skills effectively.
-                  </li>
-                  <li>
-                  An efficient job posting process and streamlined application management are essential.
-                  </li>
-                  <li>
-                  Direct, accessible communication tools with applicants can improve hiring timelines.
-                  </li>
-                </ul>
+  Recruiters require detailed filtering options to assess candidates&apos; technical skills effectively.
+</li>
+                    <li>
+                      An efficient job posting process and streamlined
+                      application management are essential.
+                    </li>
+                    <li>
+                      Direct, accessible communication tools with applicants can
+                      improve hiring timelines.
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </section>
 
+        <QuantitativeResearch />
 
+        <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG shadow shadow-zinc-700">
+          <h2 className="mb-2 ">
+            {" "}
+            <i>Key Insights from Quantitative Research :</i>{" "}
+          </h2>
 
+          <div>
+            <h3 className="font-semibold mb-2">For Job Seekers :</h3>
+            <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+              <li>
+                Most users find it difficult to locate relevant IT jobs on
+                standard platforms, highlighting the need for a specialized
+                IT-focused job portal.{" "}
+              </li>
+              <li>
+                A majority want real-time application tracking, indicating the
+                importance of transparency in the hiring process.{" "}
+              </li>
+              <li>
+                High demand for skill-specific filters and personalized job
+                recommendations suggests these are essential features.{" "}
+              </li>
+            </ul>
+          </div>
 
-        <QuantitativeResearch/>
-
-
-
-        <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG">
-             
-                <h2 className="mb-2 ">
-                  {" "}
-                  <i>Key Insights from Quantitative Research :</i>{" "}
-                </h2>
-               
-             
-             
-              <div>
-                <h3 className="font-semibold mb-2">For Job Seekers :</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-                  Most users find it difficult to locate relevant IT jobs on standard platforms, highlighting the need for a specialized IT-focused job portal.                  </li>
-                  <li>
-                  A majority want real-time application tracking, indicating the importance of transparency in the hiring process.                  </li>
-                  <li>
-                  High demand for skill-specific filters and personalized job recommendations suggests these are essential features.                  </li>
-                </ul>
-              </div>
-
-              <div className="mt-6">
-                <h3 className="font-semibold mb-2">Recruiters :</h3>
-                <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-                  Difficulty in filtering candidates by technical skills emphasizes the need for advanced filtering tools.                  </li>
-                  <li>
-                  A simplified job posting process is valued, pointing to the need for efficiency in recruiter workflows.                  </li>
-                  <li>
-                  Recruiters highly prioritize in-platform communication, showing that direct candidate engagement is key to a smoother hiring process.                  </li>
-                </ul>
-              </div>
-            </div>
-
-        
+          <div className="mt-6">
+            <h3 className="font-semibold mb-2">Recruiters :</h3>
+            <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+              <li>
+                Difficulty in filtering candidates by technical skills
+                emphasizes the need for advanced filtering tools.{" "}
+              </li>
+              <li>
+                A simplified job posting process is valued, pointing to the need
+                for efficiency in recruiter workflows.{" "}
+              </li>
+              <li>
+                Recruiters highly prioritize in-platform communication, showing
+                that direct candidate engagement is key to a smoother hiring
+                process.{" "}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <Manash/>
+        <ManashEmptyMap/>
+        <Syantan/>
+        <SyanTanEmptyComponent/>
+        <Ideate/>
+        <Phase/>
+        <LastSection/>
       </div>
     </div>
   );

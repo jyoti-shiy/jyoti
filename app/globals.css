@@ -64,8 +64,25 @@
 
 
 }
+
 .cuateBG{
   background-image: url('/image/project/cuate.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+}
+.panaBG{
+  background-image: url('/image/project/pana.png');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+}
+
+.designerRight{
+  background-image: url('/image/project/designer1.png');
+  
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position:center;

@@ -1,37 +1,10 @@
 import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import Image from 'next/image';
 
-gsap.registerPlugin(ScrollTrigger);
 
 const Project2 = () => {
-  useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in');
-
-    if (elements.length > 0) {
-      elements.forEach((el) => {
-        gsap.fromTo(
-          el,
-          { opacity: 0, x: el.classList.contains('from-left') ? -100 : 100 },
-          {
-            opacity: 1,
-            x: 0,
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 80%',
-              end: 'top 40%',
-              toggleActions: 'play none none reverse',
-            },
-          }
-        );
-      });
-    }
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+ 
 
   return (
     <div className="relative mt-[260px] bg-[#232121] rounded-[15px] pt-32 px-3 sm:px-11 pb-11">

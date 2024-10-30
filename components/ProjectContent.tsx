@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
 
 interface Project {
   title: string;
@@ -14,51 +11,7 @@ interface ProjectListProps {
 }
 
 const ProjectContent: React.FC<ProjectListProps> = ({ projectContent }) => {
-  useEffect(() => {
-    const headings = document.querySelectorAll('.project-title');
-    const listItems = document.querySelectorAll('.project-item');
-
-    // Animate headings
-    headings.forEach((heading) => {
-      gsap.fromTo(
-        heading,
-        { opacity: 0, y: -50 },
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: heading,
-            start: 'top 80%',
-            end: 'top 40%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    });
-
-    // Animate list items with stagger
-    listItems.forEach((item, index) => {
-      gsap.fromTo(
-        item,
-        { opacity: 0, x: -100 },
-        {
-          opacity: 1,
-          x: 0,
-          delay: index * 0.1, // Staggering the animation based on the index
-          scrollTrigger: {
-            trigger: item,
-            start: 'top 80%',
-            end: 'top 40%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    });
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, [projectContent]);
+  
 
   return (
     <div className="flex flex-col gap-9">
