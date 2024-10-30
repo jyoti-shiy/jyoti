@@ -79,6 +79,15 @@
   background-position:center;
   background-size: contain;
 }
+
+.designerRight{
+  background-image: url('/image/project/designer1.png');
+  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: contain;
+}
 .list-dis li::before{
   width: 7px;
   height: 7px;

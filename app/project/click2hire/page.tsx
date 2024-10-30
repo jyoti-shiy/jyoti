@@ -1,7 +1,9 @@
 "use client";
 import Ideate from "@/components/Ideate";
+import LastSection from "@/components/LastSection";
 import Manash from "@/components/Manash";
 import ManashEmptyMap from "@/components/ManashEmptyMap";
+import Phase from "@/components/Phase";
 import Project1 from "@/components/Project1";
 import ProjectContent from "@/components/ProjectContent";
 import QuantitativeResearch from "@/components/QuantitativeResearch";
@@ -449,6 +451,8 @@ const page = () => {
         <Syantan/>
         <SyanTanEmptyComponent/>
         <Ideate/>
+        <Phase/>
+        <LastSection/>
       </div>
     </div>
   );
