@@ -6,7 +6,7 @@ const Sayantan = () => {
     <div className="bg-[#1a1a1a] text-white rounded-xl p-8 shadow-lg max-w-4xl mx-auto mt-11">
       <div className="flex gap-2 items-center">
         <h1 className="text-2xl font-semibold mb-2">
-          <i>Recruiter's Personas :</i>
+          <i>Recruiter&apos;s Personas :</i>
         </h1>
         <span className="w-3/5 bg-white h-[1px]"></span>
       </div>
@@ -14,7 +14,7 @@ const Sayantan = () => {
         With the data collected from the interviews, I created two personas
         representing two ideal users of the Website. These personas helped me
         arrive at better solutions with an in-depth understanding of both types
-        of users' goals, frustrations, and overall personality.
+        of user&apos;s goals, frustrations, and overall personality.
       </p>
 
       <div className="flex flex-col lg:flex-row gap-11">
@@ -40,7 +40,7 @@ const Sayantan = () => {
             <h2 className="text-xl font-semibold mb-2">Sayantan Kar</h2>
             <p className="text-xs font-light mb-4 bg-zinc-800 rounded p-2 shadow shadow-zinc-700">
               Sayantan is responsible for recruiting IT talent for a rapidly
-              growing tech startup. He's focused on hiring developers, data
+              growing tech startup. He&apos;s focused on hiring developers, data
               scientists, and other tech roles but finds general job portals
               lacking in candidate filtering specific to technical skills. His
               team is small, and efficiency is key.

@@ -7,15 +7,16 @@ const Manash = () => {
       <div className="flex gap-2 items-center">
         <h1 className="text-2xl font-semibold mb-2">
           {" "}
-          <i> Job Seeker's Personas :</i>
+          <i> Job Seeker&apos;s Personas :</i>
+
         </h1>
         <span className="w-3/5 bg-white h-[1px]"></span>
       </div>
       <p className="text-sm font-light mb-6">
-        With the data collected from the interviews, I created two personas
-        representing two ideal users of the Website. These personas helped me
-        arrive at better solutions with an in-depth understanding of the two
-        types of users' goals, frustrations, and overall personality.
+      With the data collected from the interviews, I created two personas
+  representing two ideal users of the Website. These personas helped me
+  arrive at better solutions with an in-depth understanding of the two
+  types of users&apos; goals, frustrations, and overall personality.
       </p>
 
       <div className="flex flex-col lg:flex-row gap-11 ">

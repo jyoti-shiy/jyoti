@@ -381,10 +381,9 @@ const page = () => {
                 <div className="mt-6">
                   <h3 className="font-semibold mb-2">Recruiters :</h3>
                   <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                    <li>
-                      Recruiters require detailed filtering options to assess
-                      candidates' technical skills effectively.
-                    </li>
+                  <li>
+  Recruiters require detailed filtering options to assess candidates&apos; technical skills effectively.
+</li>
                     <li>
                       An efficient job posting process and streamlined
                       application management are essential.

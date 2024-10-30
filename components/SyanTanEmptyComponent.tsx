@@ -7,7 +7,7 @@ export default function RecruitersEmpathyMap() {
       <div className="max-w-4xl w-full pt-9 pb-11 px-8 bg-[#1a1a1a] rounded-lg shadow-md">
         <div className="flex items-center gap-3">
           <h2 className="text-lg font-semibold text-center mb-1">
-            <i>Recruiter's Empathy Map</i>
+            <i>Recruiter&apos;s Empathy Map</i>
           </h2>
           <span className="w-3/5 h-[1px] bg-white"></span>
         </div>

@@ -49,8 +49,8 @@ const Ideate = () => {
 
     {/* Job Seeker's Dashboard Card Sorting */}
     <div className="bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-20   shadow-md  p-6 rounded-lg shadow-zinc-700 hover:shadow-lg transform transition duration-150 ease-in-out">
-      <h2 className="text-center font-semibold text-md mb-4">Job Seeker's Dashboard Card Sorting</h2>
-      <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Available Job</button>
+    <h2 className="text-center font-semibold text-md mb-4">Job Seeker&apos;s Dashboard Card Sorting</h2>
+    <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Available Job</button>
       <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Applied Job</button>
       <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Job Tracking</button>
       <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Expired Job</button>
@@ -69,7 +69,7 @@ const Ideate = () => {
 
     {/* Recruiter's Dashboard Card Sorting */}
     <div className="bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-20   shadow-md  p-6 rounded-lg shadow-zinc-700 hover:shadow-lg transform transition duration-150 ease-in-out">
-    <h2 className="text-center font-semibold text-md mb-4">Recruiter's Dashboard Card Sorting</h2>
+    <h2 className="text-center font-semibold text-md mb-4">Recruiter&apos;s Dashboard Card Sorting</h2>
 
       <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Dashboard</button>
       <button className="w-full py-2 bg-zinc-700 shadow shadow-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 rounded-md mb-3  hover:scale-110 duration-150 ease-in-out">Job Post</button>

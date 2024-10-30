@@ -7,7 +7,7 @@ export default function ManashEmptyMap() {
       <div className="max-w-4xl w-full pt-9 pb-11 px-8 bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-20   shadow-md rounded-2xl">
         <div className="flex items-center gap-3 ">
           <h2 className="text-lg font-semibold text-center mb-1  ">
-            <i> Job Seeker's Empathy Map :</i>
+            <i> Job Seeker&apos;s Empathy Map :</i>
           </h2>
           <span className="w-3/5 h-[1px] bg-white "></span>
         </div>
