@@ -1,9 +1,12 @@
 "use client";
+import Ideate from "@/components/Ideate";
 import Manash from "@/components/Manash";
 import ManashEmptyMap from "@/components/ManashEmptyMap";
 import Project1 from "@/components/Project1";
 import ProjectContent from "@/components/ProjectContent";
 import QuantitativeResearch from "@/components/QuantitativeResearch";
+import Syantan from "@/components/Syantan";
+import SyanTanEmptyComponent from "@/components/SyanTanEmptyComponent";
 import Image from "next/image";
 import React from "react";
 
@@ -298,7 +301,7 @@ const page = () => {
               1. DISCOVER PHASE
             </h1>
             <div className="cuateBG rounded-2xl ">
-              <div className="text-lg backdrop-blur-5xl border     mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl ">
+              <div className="text-lg backdrop-blur-5xl shadow shadow-zinc-700     mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl ">
                 <div className="flex items-center gap-2">
                   <h2 className="mb-2 ">
                     {" "}
@@ -349,7 +352,7 @@ const page = () => {
                 </div>
               </div>
 
-              <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow">
+              <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow shadow-zinc-700">
                 <h2 className="mb-2 ">
                   {" "}
                   <i>Key Insights Derived from Interviews :</i>{" "}
@@ -397,7 +400,7 @@ const page = () => {
 
         <QuantitativeResearch />
 
-        <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG">
+        <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG shadow shadow-zinc-700">
           <h2 className="mb-2 ">
             {" "}
             <i>Key Insights from Quantitative Research :</i>{" "}
@@ -443,6 +446,9 @@ const page = () => {
         </div>
         <Manash/>
         <ManashEmptyMap/>
+        <Syantan/>
+        <SyanTanEmptyComponent/>
+        <Ideate/>
       </div>
     </div>
   );

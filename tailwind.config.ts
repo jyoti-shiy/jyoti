@@ -17,6 +17,9 @@ const config = {
         "2xl": "1400px",
       },
     },
+     backgroundImage: {
+        'gradient-70': 'linear-gradient(70deg, var(--tw-gradient-stops))',
+      },
     extend: {
       colors: {
         border: "hsl(var(--border))",

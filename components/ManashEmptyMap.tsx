@@ -1,59 +1,71 @@
-
 // components/EmpathyMap.js
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function ManashEmptyMap() {
   return (
-    <div className="min-h-screen flex items-center justify-center    text-white">
-      <div className="max-w-4xl w-full p-8 bg-[#1a1a1a] rounded-lg shadow-md">
-        <h2 className="text-lg font-semibold text-center mb-1">
-          <span className="inline-block border-t-2 border-zinc-500 w-10 mr-2"></span>Job Seeker's Empathy Map
-        </h2>
-        <p className=" text-center mb-6">
-          This empathy map helps me to articulate the core insights about the personas, guiding the design and functionality of the job portal to better meet their needs.
+    <div className=" flex items-center justify-center cuateBG  mt-5 text-white shadow shadow-zinc-700 rounded-2xl ">
+      <div className="max-w-4xl w-full pt-9 pb-11 px-8 bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-20   shadow-md rounded-2xl">
+        <div className="flex items-center gap-3 ">
+          <h2 className="text-lg font-semibold text-center mb-1  ">
+            <i> Job Seeker's Empathy Map :</i>
+          </h2>
+          <span className="w-3/5 h-[1px] bg-white "></span>
+        </div>
+        <p className=" font-light mb-6">
+          With the data collected from the interviews, I created Two persona
+          representing two ideal users of the Website. This personas helped me
+          arrived at better solutions as in depth understanding of the both two
+          types of users goal, frustrations and overall personality.
         </p>
-        
-        <div className="grid grid-cols-2 gap-6">
-          <div className="bg-zinc-700 border border-zinc-300 shadow shadow-zinc-600 p-4 rounded-lg">
-            <h3 className="font-semibold mb-2">Says</h3>
-            <ul className=" space-y-2">
+
+        <div className="grid relative grid-cols-2 gap-10">
+          <div className="absolute top-1/2 z-20 left-1/2 transform -translate-x-1/2 -translate-y-24 flex justify-center mt-8">
+            <div className="w-28 h-28  relative rounded-full overflow-hidden border-2 border-zinc-500 shadow-2xl shadow-zinc-600">
+              <Image
+                src={"/image/project/Mask group.png"}
+                alt="Profile"
+               layout="fill"
+               objectFit="cover"
+               objectPosition="center"
+
+              />
+            </div>
+          </div>
+          {/* hover:bg-gradient-70 . from-zinc-500 to-zinc-700 */}
+          <div className="bg-zinc-800 backdrop-filter backdrop-blur-md bg-opacity-50 transition-all duration-300 border border-zinc-700 shadow shadow-zinc-600 p-4 rounded-lg hover:scale-105 pb-8">
+            <h3 className="font-semibold text-xl mb-2">Says</h3>
+            <ul className="space-y-2 list-disc pl-5 text-sm font-thin">
               <li>“I want to find relevant IT jobs quickly.”</li>
               <li>“It’s frustrating to sort through irrelevant listings.”</li>
               <li>“I need clear updates on my applications.”</li>
             </ul>
           </div>
 
-          <div className="bg-zinc-700 border border-zinc-300 shadow shadow-zinc-600 p-4 rounded-lg">
-            <h3 className="font-semibold mb-2">Thinks</h3>
-            <ul className=" space-y-2">
+          <div className="bg-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 transition-all duration-300 border border-zinc-700 shadow shadow-zinc-600 p-4 rounded-lg hover:scale-105">
+            <h3 className="ont-semibold text-xl mb-2">Thinks</h3>
+            <ul className=" space-y-2 list-disc pl-5 text-sm font-thin ">
               <li>“Am I skilled enough for the roles I’m applying to?”</li>
               <li>“How can I stand out among other candidates?”</li>
               <li>“Will this job help me grow my career?”</li>
             </ul>
           </div>
 
-          <div className="bg-zinc-700 border border-zinc-300 shadow shadow-zinc-600 p-4 rounded-lg">
+          <div className="bg-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 transition-all duration-300 border border-zinc-700 shadow shadow-zinc-600 p-4 rounded-lg hover:scale-105">
             <h3 className="font-semibold mb-2">Does</h3>
-            <ul className=" space-y-2">
+            <ul className="space-y-2 list-disc pl-5 text-sm font-thin">
               <li>Actively searches job portals.</li>
               <li>Updates her resume and portfolio.</li>
               <li>Participates in online coding challenges.</li>
             </ul>
           </div>
 
-          <div className="bg-zinc-700 border border-zinc-300 shadow shadow-zinc-600 p-4 rounded-lg">
+          <div className="bg-zinc-800  backdrop-filter backdrop-blur-md bg-opacity-50 transition-all duration-300 border border-zinc-700 shadow shadow-zinc-600 p-4 rounded-lg hover:scale-105">
             <h3 className="font-semibold mb-2">Feels</h3>
-            <ul className=" space-y-2">
+            <ul className=" space-y-2 list-disc pl-5 text-sm font-thin">
               <li>Frustrated with the job search process.</li>
               <li>Anxious about the competition in the IT job market.</li>
               <li>Hopeful about finding a role that fits her career goals.</li>
             </ul>
-          </div>
-        </div>
-        
-        <div className="relative flex justify-center mt-8">
-          <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-700">
-            <Image src={'/image/project/Mask group.png'} alt="Profile" width={96} height={96} />
           </div>
         </div>
       </div>
