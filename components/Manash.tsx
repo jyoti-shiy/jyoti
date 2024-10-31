@@ -23,24 +23,25 @@ const Manash = () => {
         {/* Left Section with Image and Basic Info */}
         <div className="lg:flex lg:w-[60%] gap-3">
           <div className="flex-shrink-0">
-            <div className="relative w-full rounded-lg overflow-hidden">
-              <Image
-                src="/image/project/Group 1261153008.png"
-                alt="Persona"
-                width={160}
-                height={600}
-                className="rounded-full"
-              />
-              <div className="font-thin  tracking-wide	">
-                <p className="mt-2 text-xs">Age: 31</p>
-                <p className="mt-1 text-xs">Profession: Frontend </p>
-                <p className="mt-1 text-xs">Location: West Bengal</p>
-              </div>
-            </div>
+          <div className="relative w-full lg:rounded-lg overflow-hidden flex lg:flex-col lg:block items-center">
+  <Image
+    src="/image/project/Group 1261153008.png"
+    alt="Persona"
+    width={160}
+    height={600}
+    className="rounded-full"
+  />
+  <div className="lg:font-thin lg:tracking-wide ml-4 lg:ml-0 mt-2 lg:mt-0 text-sm lg:text-xs flex flex-col">
+    <p className="mt-2 lg:mt-2 text-base lg:text-xs font-normal">Age : 31</p>
+    <p className="mt-1 lg:mt-1 text-base lg:text-xs font-normal">Profession : Frontend</p>
+    <p className="mt-1 lg:mt-1 text-base lg:text-xs font-normal">Location : West Bengal</p>
+  </div>
+</div>
+
           </div>
           <div className="flex flex-col flex-1">
             <h2 className="text-xl font-semibold mb-2">Manash Barai</h2>
-            <p className="text-xs font-light mb-4 bg-zinc-800 rounded p-2 shadow shadow-zinc-700 ">
+            <p className="text-xs tracking-wider mb-4 bg-zinc-800 rounded p-2 shadow shadow-zinc-700 font-thin ">
               Manash is an experienced frontend developer actively searching for
               opportunities in tech companies where she can grow her skill set
               and work on innovative projects. She often struggles to find jobs

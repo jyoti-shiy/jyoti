@@ -1,11 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React,{useState} from "react";
 import { useRouter } from 'next/navigation';
+import ImagePop from "@/components/ImagePop";
 
 const Page = () => {
   const router = useRouter();
+  type Img = {
+    id: number;
+    src: string;
+    alt: string;
+  };
+
+  const imageData: Img[] = [
+    { id: 1, src: "/image/project/1st box.png", alt: "First Box" },
+    { id: 2, src: "/image/project/2nd box.png", alt: "Second Box" },
+    { id: 3, src: "/image/project/3rd box.png", alt: "Third Box" },
+    { id: 4, src: "/image/project/4th box.png", alt: "Fourth Box" }
+  ];
+  const [first, setfirst] = useState(imageData[0].src);
 
   return (
     <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden px-3">
@@ -20,71 +34,35 @@ const Page = () => {
         </p>
       </div>
 
+      <div className="mt-8">
+
+      <ImagePop first={first} />
+    </div>
+
       <div className="flex flex-wrap gap-5 my-14 justify-center">
+      {imageData.map((image) => (
         <div
+          key={image.id}
           style={{ cursor: "pointer" }}
           className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg my_border cardAnimation"
+          onClick={() => {
+            setfirst(image.src);
+            window.scrollTo({ top: 80, behavior: "smooth" });
+          }}
         >
           <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
             <Image
-              src="/image/project/1st box.png"
+              src={image.src}
               width={500}
               height={300}
               quality={100}
-              alt="Hero"
+              alt={image.alt}
               className="transition-transform duration-300 transform group-hover:scale-110 p-5"
             />
           </div>
         </div>
-
-        <div
-          style={{ cursor: "pointer" }}
-          className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg my_border cardAnimation"
-        >
-          <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
-            <Image
-              src="/image/project/2nd box.png"
-              width={500}
-              height={300}
-              quality={100}
-              alt="Hero"
-              className="transition-transform duration-300 transform group-hover:scale-110 p-5"
-            />
-          </div>
-        </div>
-
-        <div
-          style={{ cursor: "pointer" }}
-          className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg my_border cardAnimation"
-        >
-          <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
-            <Image
-              src="/image/project/3rd box.png"
-              width={500}
-              height={300}
-              quality={100}
-              alt="Hero"
-              className="transition-transform duration-300 transform group-hover:scale-110 p-5"
-            />
-          </div>
-        </div>
-
-        <div
-          style={{ cursor: "pointer" }}
-          className="w-full sm:w-[400px] group overflow-hidden bg-zinc-900 rounded-lg my_border cardAnimation"
-        >
-          <div className="h-[300px] overflow-hidden homepageCardGradient flex justify-center items-center">
-            <Image
-              src="/image/project/4th box.png"
-              width={500}
-              height={300}
-              quality={100}
-              alt="Hero"
-              className="transition-transform duration-300 transform group-hover:scale-110 p-5"
-            />
-          </div>
-        </div>
-      </div>
+      ))}
+    </div>
 
       <h1 className="text-[30px] mb-4 font-bold text-gray-200">Overview</h1>
       <div className="w-full bg-[#232121] rounded-[15px] p-11 gap-3 border border-zinc-600">
