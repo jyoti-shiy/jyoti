@@ -6,7 +6,7 @@ export default function RecruitersEmpathyMap() {
     <div className="flex items-center justify-center mt-5 text-white">
       <div className="max-w-4xl w-full pt-9 pb-11 px-8 bg-[#1a1a1a] rounded-lg shadow-md">
         <div className="flex items-center gap-3">
-          <h2 className="text-lg font-semibold text-center mb-1">
+          <h2 className="text-lg font-semibold text-center mb-1 text-start">
             <i>Recruiter&apos;s Empathy Map</i>
           </h2>
           <span className="w-3/5 h-[1px] bg-white"></span>
@@ -15,8 +15,8 @@ export default function RecruitersEmpathyMap() {
           This empathy map helps me to articulate the core insights about the personas, guiding the design and functionality of the job portal to better meet their needs.
         </p>
 
-        <div className="grid relative grid-cols-2 gap-10">
-          <div className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-20 flex justify-center mt-8">
+        <div className="grid relative lg:grid-cols-2 gap-10">
+          <div className="absolute opacity-0 lg:opacity-100 z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-20 flex justify-center mt-8">
             <div className="w-28 h-28 relative rounded-full overflow-hidden border-2 border-zinc-500 shadow-2xl shadow-zinc-600">
               <Image
                 src={"/image/project/image.png"}

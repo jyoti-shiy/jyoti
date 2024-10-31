@@ -51,14 +51,14 @@ const QuantitativeResearch = () => {
   ];
 
   return (
-    <section className="bg-[rgba(35,33,33,0.17)] rounded-2xl py-11 px-9 mt-11 cuateBG">
+    <section className="bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80  rounded-2xl py-11 px-9 mt-11 cuateBG">
       <div className="flex items-center justify-end gap-2">
-        <span className="w-3/5 bg-white h-[1px]"></span>
+        <span className="w-1/3 bg-white h-[1px]"></span>
         <h1 className="capitalize text-xl">
           <i>: quantitative research</i>
         </h1>
       </div>
-      <p className="font-thin text-end">
+      <p className=" tracking-wider text-end">
         To support design decisions, I gathered quantitative data to understand
         user behavior and <br />
         preferences:
@@ -70,14 +70,17 @@ const QuantitativeResearch = () => {
         </h1>
 
         {/* Responsive Grid Layout */}
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
           {seekers.map((s, i) => (
             <div
               key={i}
-              className="flex flex-col gap-2  p-4 rounded-xl shadow-md items-center"
+              className="flex flex-col gap-2  p-4 rounded-xl shadow-md shadow-zinc-700 items-center backdrop-filter backdrop-blur-lg bg-opacity-90"
             >
-              <p className="seeker-description mt-4 text-center font-thin h-16">
-                {s.description}
+              <p className="seeker-description mt-4 text-center font-thin tracking-widest h-16">
+                <span className="text-blue-400 font-semibold">
+                  {s.description.split(" ")[0]}
+                </span>{" "}
+                {s.description.split(" ").slice(1).join(" ")}
               </p>
               <div className="w-1/2 relative h-64">
                 <Image
@@ -94,21 +97,23 @@ const QuantitativeResearch = () => {
         </div>
       </div>
 
-
-      <div>
+      <div className="mt-7">
         <h1 className="text-lg">
           <i>For Recruiters :</i>
         </h1>
 
         {/* Responsive Grid Layout */}
-        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
-          {recruiters.map((s, i) => (
+        <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+        {recruiters.map((s, i) => (
             <div
               key={i}
-              className="flex flex-col gap-2  p-4 rounded-xl shadow-md items-center"
+              className="flex flex-col gap-2  p-4 rounded-xl shadow-md shadow-zinc-700 items-center backdrop-filter backdrop-blur-lg bg-opacity-90"
             >
-              <p className="seeker-description mt-4 text-center font-thin h-16">
-                {s.description}
+              <p className="seeker-description mt-4 text-center font-thin tracking-widest h-16">
+                <span className="text-blue-400 font-semibold">
+                  {s.description.split(" ")[0]}
+                </span>{" "}
+                {s.description.split(" ").slice(1).join(" ")}
               </p>
               <div className="w-1/2 relative h-64">
                 <Image

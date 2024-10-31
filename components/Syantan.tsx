@@ -21,24 +21,27 @@ const Sayantan = () => {
         {/* Left Section with Image and Basic Info */}
         <div className="lg:flex lg:w-[60%] gap-3">
           <div className="flex-shrink-0">
-            <div className="relative w-full rounded-lg overflow-hidden">
-              <Image
-                src="/image/project/Group 1261153106.png"
-                alt="Persona"
-                width={160}
-                height={600}
-                className="rounded-full"
-              />
-              <div className="font-thin tracking-wide">
-                <p className="mt-2 text-xs">Age: 35</p>
-                <p className="mt-1 text-xs">Profession: Recruiter <br /> of Betazen Info <br /> Tech Pvt Ltd</p>
-                <p className="mt-1 text-xs">Location: West Bengal</p>
-              </div>
-            </div>
+          <div className="relative w-full lg:rounded-lg overflow-hidden flex lg:flex-col lg:block items-center">
+  <Image
+    src="/image/project/Group 1261153106.png"
+    alt="Persona"
+    width={160}
+    height={600}
+    className="rounded-full"
+  />
+  <div className="lg:font-thin lg:tracking-wide ml-4 lg:ml-0 mt-2 lg:mt-0 text-sm lg:text-xs flex flex-col">
+    <p className="mt-2 lg:mt-2 text-base lg:text-xs font-normal">Age: 35</p>
+    <p className="mt-1 lg:mt-1 text-base lg:text-xs font-normal">
+      Profession: Recruiter <br /> of Betazen Info <br /> Tech Pvt Ltd
+    </p>
+    <p className="mt-1 lg:mt-1 text-base lg:text-xs font-normal">Location: West Bengal</p>
+  </div>
+</div>
+
           </div>
           <div className="flex flex-col flex-1">
             <h2 className="text-xl font-semibold mb-2">Sayantan Kar</h2>
-            <p className="text-xs font-light mb-4 bg-zinc-800 rounded p-2 shadow shadow-zinc-700">
+            <p className="text-xs font-thin tracking-wider mb-4 bg-zinc-800 rounded p-2 shadow shadow-zinc-700">
               Sayantan is responsible for recruiting IT talent for a rapidly
               growing tech startup. He&apos;s focused on hiring developers, data
               scientists, and other tech roles but finds general job portals

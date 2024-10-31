@@ -101,14 +101,14 @@ const page = () => {
         <h1 className="text-2xl sm:text-[30px] mb-2 font-bold text-gray-200">
           Overview
         </h1>
-        <div className="w-full bg-[rgba(35,33,33,0.17)] rounded-[15px] p-5 sm:p-11 gap-3 flex flex-col sm:flex-row shadow">
+        <div className="w-full  bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80 rounded-[15px] p-5 sm:p-11 gap-3 flex flex-col sm:flex-row shadow">
           <ul className="w-full sm:w-[50%]">
             <li className="mb-9">
               <h2 className="text-[18px] sm:text-[20px] mb-3">
                 {" "}
                 <i> What Is Click2Hires ? </i>{" "}
               </h2>
-              <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
+              <p className=" text-[14px]  tracking-wider leading-snug">
                 The IT job portal streamlines hiring with tailored dashboards:
                 job seekers find relevant roles, track applications, and get
                 recommendations, while recruiters post jobs, filter candidates,
@@ -118,13 +118,13 @@ const page = () => {
             </li>
             <li className="mb-9">
               <h2 className="text-[18px] sm:text-[20px] mb-3">Tools</h2>
-              <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
+              <p className=" text-[14px]  tracking-wider leading-snug">
                 Figma, Canva, ChatGPT
               </p>
             </li>
             <li>
               <h2 className="text-[18px] sm:text-[20px]">Timeline</h2>
-              <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
+              <p className=" text-[14px]  tracking-wider leading-snug">
                 8 weeks
               </p>
             </li>
@@ -132,7 +132,7 @@ const page = () => {
           <ul className="w-full sm:w-[50%]">
             <li className="mb-9">
               <h2 className="text-[18px] sm:text-[20px] mb-3">Purpose</h2>
-              <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
+              <p className=" text-[14px]  tracking-wider leading-snug">
                 Designed for IT job seekers and tech recruiters, this project
                 aims to simplify the hiring process with a platform tailored to
                 the tech industry’s needs.
@@ -140,7 +140,7 @@ const page = () => {
             </li>
             <li>
               <h2 className="text-[18px] sm:text-[20px] mb-3">My Role</h2>
-              <p className="text-[#A6A5A5] text-[14px] font-light leading-snug">
+              <p className=" text-[14px]  tracking-wider leading-snug">
                 UI/UX Designer <br />
                 <br />
                 As the UI/UX Designer, I led the design process, focusing on
@@ -172,16 +172,16 @@ const page = () => {
             The proposed solution is an IT-focused job portal featuring distinct
             dashboards for job seekers and recruiters
           </p>
-          <ul className="mt-5 list-disc ">
-            <li className="relative text-sm text-[#B7B7B7] ml-5 project-item">
-              <i className="font-semibold"> For Job Seekers:</i> The platform
+          <ul className="mt-5 list-disc bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80 rounded-[15px] p-5">
+            <li className="relative text-sm text-[#e0e0e0] ml-5 project-item">
+              <i className="font-semibold text-white"> For Job Seekers:</i> The platform
               offers advanced search filters specific to IT roles, personalized
               job recommendations, and an application tracker to streamline the
               job search and application process.
             </li>
 
-            <li className="relative text-sm text-[#B7B7B7] ml-5 project-item mt-3">
-              <i className="font-semibold"> For Recruiters:</i> The dashboard
+            <li className="relative text-sm text-[#e0e0e0] ml-5 project-item mt-3">
+              <i className="font-semibold text-white"> For Recruiters:</i> The dashboard
               includes efficient job posting tools, targeted candidate filtering
               by skills and experience, and management features for reviewing
               applications and communicating with candidates.
@@ -195,7 +195,7 @@ const page = () => {
         </div>
 
         <div className="my-5">
-          <h1 className=" capitalize text-3xl">design process</h1>
+          <h1 className=" capitalize text-3xl ">design process</h1>
         </div>
 
         <div className="grid grid-cols-4 my-12 relative">
@@ -303,15 +303,15 @@ const page = () => {
               1. DISCOVER PHASE
             </h1>
             <div className="cuateBG rounded-2xl ">
-              <div className="text-lg backdrop-blur-5xl shadow shadow-zinc-700     mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl ">
+              <div className="text-lg backdrop-blur-5xl shadow shadow-zinc-700     mb-4 bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80 w-full py-11 px-9 rounded-2xl ">
                 <div className="flex items-center gap-2">
                   <h2 className="mb-2 ">
                     {" "}
                     <i> Qualitative Research :</i>{" "}
                   </h2>
-                  <span className=" h-[1px] w-2/3 bg-white"> </span>
+                  <span className=" h-[1px] w-1/3 bg-white"> </span>
                 </div>
-                <p className="mb-4 font-thin text-md">
+                <p className="mb-4  tracking-wider">
                   To understand the needs of IT job seekers and recruiters, I
                   conducted user interviews and analyzed feedback from tech
                   industry professionals:
@@ -319,7 +319,7 @@ const page = () => {
 
                 <div>
                   <h3 className="font-semibold mb-2">Job Seekers:</h3>
-                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                  <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
                     <li>
                       How can they find relevant IT roles more easily on a
                       dedicated platform?
@@ -337,7 +337,7 @@ const page = () => {
 
                 <div className="mt-6">
                   <h3 className="font-semibold mb-2">Recruiters:</h3>
-                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                  <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
                     <li>
                       How can they quickly filter candidates based on technical
                       skills and experience?
@@ -354,15 +354,19 @@ const page = () => {
                 </div>
               </div>
 
-              <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow shadow-zinc-700">
-                <h2 className="mb-2 ">
-                  {" "}
-                  <i>Key Insights Derived from Interviews :</i>{" "}
-                </h2>
+              <div className="text-lg mb-4  bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80 w-full py-11 px-9 rounded-2xl shadow shadow-zinc-700">
+              <div className="flex items-center gap-2">
+                  <h2 className="mb-2 ">
+                    {" "}
+                    <i>Key Insights Derived from Interviews :</i>{" "}
+                  </h2>
+                  <span className=" h-[1px] w-1/3 bg-white"> </span>
+                </div>
+                
 
                 <div>
                   <h3 className="font-semibold mb-2">For Job Seekers :</h3>
-                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+                  <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
                     <li>
                       There is a strong need for advanced filters to help
                       quickly identify relevant IT roles.
@@ -380,10 +384,11 @@ const page = () => {
 
                 <div className="mt-6">
                   <h3 className="font-semibold mb-2">Recruiters :</h3>
-                  <ul className="list-disc list-inside space-y-2 font-thin text-sm">
-                  <li>
-  Recruiters require detailed filtering options to assess candidates&apos; technical skills effectively.
-</li>
+                  <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
+                    <li>
+                      Recruiters require detailed filtering options to assess
+                      candidates&apos; technical skills effectively.
+                    </li>
                     <li>
                       An efficient job posting process and streamlined
                       application management are essential.
@@ -401,7 +406,7 @@ const page = () => {
 
         <QuantitativeResearch />
 
-        <div className="text-lg mb-4 bg-[rgba(35,33,33,0.17)] w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG shadow shadow-zinc-700">
+        <div className="text-lg mb-4 bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90 w-full py-11 px-9 rounded-2xl shadow mt-11 cuateBG shadow-zinc-700">
           <h2 className="mb-2 ">
             {" "}
             <i>Key Insights from Quantitative Research :</i>{" "}
@@ -409,7 +414,7 @@ const page = () => {
 
           <div>
             <h3 className="font-semibold mb-2">For Job Seekers :</h3>
-            <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+            <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
               <li>
                 Most users find it difficult to locate relevant IT jobs on
                 standard platforms, highlighting the need for a specialized
@@ -428,7 +433,7 @@ const page = () => {
 
           <div className="mt-6">
             <h3 className="font-semibold mb-2">Recruiters :</h3>
-            <ul className="list-disc list-inside space-y-2 font-thin text-sm">
+            <ul className="list-disc list-inside space-y-2 tracking-wider text-sm">
               <li>
                 Difficulty in filtering candidates by technical skills
                 emphasizes the need for advanced filtering tools.{" "}
@@ -445,13 +450,13 @@ const page = () => {
             </ul>
           </div>
         </div>
-        <Manash/>
-        <ManashEmptyMap/>
-        <Syantan/>
-        <SyanTanEmptyComponent/>
-        <Ideate/>
-        <Phase/>
-        <LastSection/>
+        <Manash />
+        <ManashEmptyMap />
+        <Syantan />
+        <SyanTanEmptyComponent />
+        <Ideate />
+        <Phase />
+        <LastSection />
       </div>
     </div>
   );
