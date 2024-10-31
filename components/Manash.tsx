@@ -3,7 +3,7 @@ import React from "react";
 
 const Manash = () => {
   return (
-    <div className="bg-[#1a1a1a] text-white rounded-xl  p-8 shadow-lg max-w-4xl mx-auto mt-11 ">
+    <div className="bg-[#1a1a1a] text-white rounded-xl  p-8 shadow-lg max-w-4xl mx-auto mt-3 ">
       <div className="flex gap-2 items-center">
         <h1 className="text-2xl font-semibold mb-2">
           {" "}

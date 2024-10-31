@@ -25,7 +25,7 @@ const Phase = () => {
         </div>
       </div>
 
-      <div className="relative w-full lg:h-[100vh] h-[50vh] panaBG bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90  rounded-2xl px-5 ">
+      <div className="relative w-full lg:h-[100vh] h-[50vh] designerRight bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90  rounded-2xl px-5 ">
           <Image
             src={"/image/project/Group 1261153109.png"}
             alt="flow"
@@ -37,7 +37,7 @@ const Phase = () => {
         </div>
 
 
-        <div className="relative w-full mt-7 h-[30vh] lg:h-[40vh] panaBG bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90   rounded-2xl px-5 ">
+        <div className="relative w-full mt-7 h-[30vh] lg:h-[40vh] designerRight bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90   rounded-2xl px-5 ">
           <Image
             src={"/image/project/Group 1261153096.png"}
             alt="flow"
@@ -48,7 +48,7 @@ const Phase = () => {
           />
         </div>
 
-        <div className="relative w-full mt-7 lg:h-[40vh] h-[20vh] panaBG bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90   rounded-2xl px-5 ">
+        <div className="relative w-full mt-7 lg:h-[40vh] h-[20vh] designerRight bg-[#1a1a1a]  backdrop-filter backdrop-blur-lg bg-opacity-90   rounded-2xl px-5 ">
           <Image
             src={"/image/project/Group 1261153110 (1).png"}
             alt="flow"

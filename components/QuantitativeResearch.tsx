@@ -53,8 +53,8 @@ const QuantitativeResearch = () => {
   return (
     <section className="bg-[#1a1a1a]  backdrop-filter backdrop-blur-md bg-opacity-80  rounded-2xl py-11 px-9 mt-11 cuateBG">
       <div className="flex items-center justify-end gap-2">
-        <span className="w-1/3 bg-white h-[1px]"></span>
-        <h1 className="capitalize text-xl">
+        <span className="w-1/5 lg:w-1/3 bg-white h-[1px]"></span>
+        <h1 className="capitalize text-xl text-end">
           <i>: quantitative research</i>
         </h1>
       </div>
