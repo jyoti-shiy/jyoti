@@ -1,6 +1,7 @@
 "use client";
 import Project2 from "@/components/Project2";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -124,6 +125,8 @@ const page = () => {
         </div>
 
         <Project2/>
+
+      <Link className=" flex mt-5 text-purple-400 items-center gap-5" href="https://www.behance.net/gallery/211400923/UX-Case-Study-of-AstroKnock-App"> <i> Explore More About Case Study :  </i> <span className="w-1/3 h-[1px] bg-purple-400"  ></span>  </Link>
       </div>
     </div>
   );

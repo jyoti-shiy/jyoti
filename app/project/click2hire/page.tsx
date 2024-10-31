@@ -75,8 +75,8 @@ const page = () => {
       <div className="pt-24 pb-11 bg-transparent blurAnimation overflow-hidden">
         <Image src={"/image/project/logo.png"} alt="" width={300} height={30} />
 
-        <div className="flex flex-col sm:flex-row mt-11 gap-5 justify-center items-center">
-          <div className="list-disc w-full sm:w-[506px]">
+        <div className="flex flex-col sm:flex-row mt-11 gap-5 justify-center ">
+          <div className="list-disc w-full sm:w-[506px] lg:mt-16">
             <h1 className="text-2xl sm:text-[30px] mb-3">UX case study </h1>
 
             <p>
@@ -255,7 +255,7 @@ const page = () => {
           <div className="w-full flex-1 sm:w-[185px] flex flex-col items-center justify-start text-center space-y-2">
             <div className="flex items-center justify-center relative">
               <Image
-                src={"/image/project/Group 1261152996.png"}
+                src={"/image/project/Group 1261152998 (1).png"}
                 alt=""
                 width={110}
                 height={100}
@@ -450,6 +450,9 @@ const page = () => {
             </ul>
           </div>
         </div>
+
+        <h1 className="text-3xl capitalize text-center  mt-7"> 2. define phase</h1>
+
         <Manash />
         <ManashEmptyMap />
         <Syantan />

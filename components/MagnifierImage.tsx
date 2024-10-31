@@ -35,7 +35,7 @@ export default function MagnifierImage() {
 
   return (
     <div
-      className="relative w-full lg:h-[100vh] h-[40vh] overflow-hidden"
+      className="relative w-full lg:h-[100vh] h-[40vh] overflow-hidden "
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       onMouseMove={handleMouseMove}
@@ -49,7 +49,7 @@ export default function MagnifierImage() {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
-        className={`transition-transform duration-300 ${
+        className={` transition-transform duration-300 ${
           isHovering ? "scale-150" : "scale-100"
         }`}
         style={{

@@ -12,7 +12,7 @@ const Page = () => {
 
 <div className="w-full bg-[#232121] rounded-[15px] justify-between p-5 items-center sm:p-11 gap-3 flex flex-col sm:flex-row border border-zinc-600">
         <div className="text w-full lg:w-[40%] flex flex-col gap-3">
-          <h2 className="text-3xl font-semibold">Click To  <span className="text-blue-400"> Hire</span> </h2>
+          <h2 className="text-3xl font-semibold">Click<span className="text-blue-400">2Hire</span> </h2>
           <p className="text-[12px]">
           The IT job portal streamlines hiring with tailored dashboards: job seekers find relevant roles, track applications, and get recommendations, while recruiters post jobs, filter candidates, and manage selections—offering a seamless experience for both in the tech industry.
           </p>
