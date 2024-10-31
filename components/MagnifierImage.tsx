@@ -6,9 +6,13 @@ export default function MagnifierImage() {
   const [isHovering, setIsHovering] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
-  const handleMouseMove = (e) => {
+  // Specify the event type for mouse move
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const { offsetX, offsetY, target } = e.nativeEvent;
-    const { offsetWidth, offsetHeight } = target;
+
+    // Cast target to HTMLElement
+    const element = target as HTMLElement;
+    const { offsetWidth, offsetHeight } = element;
 
     // Calculate the percentage positions
     const x = (offsetX / offsetWidth) * 100;
@@ -17,9 +21,10 @@ export default function MagnifierImage() {
     setPosition({ x, y });
   };
 
-  const handleTouchMove = (e) => {
+  // Specify the event type for touch move
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
     const touch = e.touches[0];
-    const { left, top, width, height } = e.target.getBoundingClientRect();
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
 
     // Calculate touch position in percentages
     const x = ((touch.clientX - left) / width) * 100;
