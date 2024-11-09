@@ -5,9 +5,9 @@ import React from 'react';
 const Resume = () => {
   return (
     <div>
-      <div className="circle flex justify-center items-center">
+      <div className="circle">
         <Link href="/jyoti.pdf" target='_blank' download="jyoti.pdf" className=""  >
-        <Image className='fixed bottom-[12px] right-[11px]' src={"/image/icon/DownloadPackage.svg"} alt='dwonlod'width={24} height={24} /> 
+        <Image className=' grayscale opacity-35 ' src={"/image/icon/DownloadPackage.svg"} alt='dwonlod'width={24} height={24} /> 
       
 
         </Link>

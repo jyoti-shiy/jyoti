@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Resume from "./Resume";
 
 interface IFirstMenu {
   imageIcon: string;
@@ -18,9 +19,7 @@ interface NavbarProps {
 
 export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
   const currentPath = usePathname();
-  
-  
-  
+
   const [hoveredPath, setHoveredPath] = useState<string | null>(null);
 
   const [menuWidth, setMenuWidth] = useState<boolean>(true);
@@ -86,6 +85,12 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
       imageIcon2: "/image/icon/BehanceWhite.png",
       nameOfItem: "Behance",
       id: "8",
+    },
+    {
+      imageIcon: "/image/icon/Download (1).png",
+      imageIcon2: "/image/icon/DownloadPackage.svg",
+      nameOfItem: "Resume",
+      id: "9",
     },
   ];
 
@@ -207,32 +212,35 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
                       menuWidth ? "m-0" : "m-auto"
                     } gap-3`}
                   >
-                   {hoveredPath ?  <Image
-                      src={
-                        
-                        currentPath === `/${menuItem.path}` || hoveredPath===menuItem.id
-                          ? menuItem.imageIcon
-                          : menuItem.imageIcon2
-                      }
-                      alt="ProfileImage"
-                      width={17}
-                      quality={100}
-                      height={17}
-                      className={`rounded-pill`}
-                    />:<Image
-                    src={
-                      currentPath === `/${menuItem.path}` ||
-                      hoveredPath === menuItem.path
-                        ? menuItem.imageIcon
-                        : menuItem.imageIcon2
-                    }
-                    alt="ProfileImage"
-                    width={17}
-                    quality={100}
-                    height={17}
-                    className={`rounded-pill`}
-                  />}
-
+                    {hoveredPath ? (
+                      <Image
+                        src={
+                          currentPath === `/${menuItem.path}` ||
+                          hoveredPath === menuItem.id
+                            ? menuItem.imageIcon
+                            : menuItem.imageIcon2
+                        }
+                        alt="ProfileImage"
+                        width={17}
+                        quality={100}
+                        height={17}
+                        className={`rounded-pill`}
+                      />
+                    ) : (
+                      <Image
+                        src={
+                          currentPath === `/${menuItem.path}` ||
+                          hoveredPath === menuItem.path
+                            ? menuItem.imageIcon
+                            : menuItem.imageIcon2
+                        }
+                        alt="ProfileImage"
+                        width={17}
+                        quality={100}
+                        height={17}
+                        className={`rounded-pill`}
+                      />
+                    )}
 
                     {menuWidth ? (
                       <p className={`m-0 p-0 `}>{menuItem.nameOfItem}</p>
@@ -298,15 +306,18 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
                 onMouseEnter={() => setMenuId(menuItem.id)}
                 onMouseLeave={() => setMenuId("")}
                 onClick={() => {
-                  menuItem.id === "6" &&
-                    (window.location.href =
-                      "mailto:jyotishikary400@gmail.com?subject=Subject%20Here&body=Body%20Here");
-                  menuItem.id === "7" &&
-                    (window.location.href =
-                      "https://www.linkedin.com/in/jyotishikary/");
-                  menuItem.id === "8" &&
-                    (window.location.href =
-                      "https://www.behance.net/jyotishikary400_s");
+                  if (menuItem.id === "6") {
+                    window.open(
+                      "mailto:jyotishikary400@gmail.com?subject=Subject%20Here&body=Body%20Here",
+                      "_blank"
+                    );
+                  } else if (menuItem.id === "7") {
+                    window.open("https://www.linkedin.com/in/jyotishikary/", "_blank");
+                  } else if (menuItem.id === "8") {
+                    window.open("https://www.behance.net/jyotishikary400_s", "_blank");
+                  } else if (menuItem.id === "9") {
+                    window.open("/jyoti.pdf", "_blank");
+                  }
                 }}
               >
                 <Link
@@ -383,6 +394,7 @@ export default function Navbar({ widthsubstract, menubar }: NavbarProps) {
               </li>
             ))}
           </ul>
+         
         </div>
       </div>
     </div>

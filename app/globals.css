@@ -299,16 +299,11 @@
   }
 }
 .circle {
-  position: fixed;
-  bottom: 5px;
-  right: 10px;
+  
   display: block;
-  z-index: 999;
-  border-radius: 100%;
-  height: 50px;
-  width: 50px;
+  border-radius: 50%;
+ 
   margin: 0;
-  background: radial-gradient(circle at 100px 100px, #6c6c6c, #000);
   animation: rotateInPlace 3s infinite linear;
 }
 
