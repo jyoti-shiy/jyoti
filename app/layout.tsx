@@ -100,7 +100,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Resume/>
+         
           <Navbar menubar={menubar} widthsubstract={widthsubstract} />
           <div style={mrtyle} id="mainRoot" className="bg-zinc-950 text-white ">
             {children}
